@@ -1,0 +1,49 @@
+@use 'styles/default';
+
+.stats{
+  margin-top: 200px;
+  min-height: 200px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: default.$bg_secondary;
+  display: flex;
+  padding: 48px 76px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  grid-gap: 40px;
+}
+
+.item{
+  display: grid;
+  grid-template-areas:
+          "img value"
+          "none title";
+  align-items: center;
+
+  img{
+    grid-area: img;
+  }
+}
+
+.value{
+  grid-area: value;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 56px;
+  letter-spacing: 0.02em;
+}
+.title{
+  grid-area: title;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 38px;
+  color: default.$text_secondary;
+}
+
+@media (max-width: 550px) {
+  .stats{
+    margin-top: 0px;
+    padding: 48px 5px;
+  }
+}

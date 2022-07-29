@@ -1,0 +1,10 @@
+@use './default.scss';
+
+.main{
+  background-color: default.$bg_primary;
+  min-height: 100vh;
+}
+.container{
+  padding: 15px 0 0;
+  position: relative;
+}

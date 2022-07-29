@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+$btn_default: #1B34F2;
+$btn_hover: #384BD9;
+$btn_active: #16248C;
+$btn_disabled: #343D82;
+$text_primary: #FFFFFF
+;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.btn_primary{
+  font-family: 'Inter', sans-serif;
+  border: none;
+  background-color: $btn_default;
+  color: $text_primary;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  &:hover{
+    background-color: $btn_hover;
+  }
+  &:active{
+    background-color: $btn_active;
+  }
+}
+
+.container{
+  padding: 0 10vw;
+}
+
+@media (max-width: 620px) {
+  .container{
+    padding: 0 4vw;
+  }
+}
+

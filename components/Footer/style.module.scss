@@ -1,0 +1,40 @@
+@use 'styles/default';
+
+.footer{
+  margin-top: 300px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+
+  * + * {
+    margin-left: 10px;
+  }
+
+  h3{
+    font-weight: 800;
+    font-size: 23px;
+    color: default.$text_primary;
+  }
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  grid-gap: 40px;
+  img{
+    cursor: pointer;
+    filter: invert(36%) sepia(95%) saturate(10750%) hue-rotate(240deg) brightness(95%) contrast(100%);
+  }
+}
+
+@media (max-width: 400px) {
+  .links {
+    grid-gap: 20px;
+  }
+}

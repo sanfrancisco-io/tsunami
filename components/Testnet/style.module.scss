@@ -1,0 +1,46 @@
+@use 'styles/default';
+
+.content{
+  text-align: center;
+  margin-top: 250px;
+}
+
+.title{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 105px;
+  color: white;
+}
+
+.title_blue{
+  background: linear-gradient(135.98deg, #20D6B5 10.1%, #24AAF2 52.46%, #384BD9 93.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 38px;
+  margin: 22px 0 0;
+  color: default.$text_secondary;
+}
+
+.btn{
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  width: 215px;
+  height: 60px;
+  background: default.$btn_default;
+  border-radius: 8px;
+}
+
+@media (max-width: 430px) {
+  .title{
+    font-size: 70px;
+  }
+}
